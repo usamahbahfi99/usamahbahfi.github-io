@@ -1,0 +1,91 @@
+<html>
+<head>
+<script>
+function validateForm() {
+  var x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+</script>
+<style>
+	 p
+	 {
+	  color: red;
+	 }
+	 h1
+	 {
+	  color: red;
+	 }
+	 body 
+	 {
+	  background-image: url('webdesign.jpg');
+      -webkit-background-size: 100% 100%;
+      -moz-background-size: 100% 100%;
+      -o-background-size: 100% 100%;
+      background-size: 100% 100%;
+	 }
+	*{
+	  box-sizing: border-box;
+	 }
+	 .header, .footer {
+	  background-color: none;
+	  color: red;
+	  padding: 15px;
+	 }
+	 .column {
+	  float: left;
+	  padding: 15px;
+	 }
+	 .clearfix::after {
+	  content: "";
+	  clear: both;
+	  display: table;
+	 }
+	 .menu {
+	  width: 25%;
+	 }
+	 .content {
+	  width: 75%;
+	 }
+	 .menu ul {
+	  list-style-type: none;
+	  margin: 0;
+	  padding: 0;
+	 }
+	 .menu li {
+	  padding: 8px;
+	  margin-bottom: 8px;
+	  background-color: none;
+	  color: red;
+	 }
+	 .menu li:hover {
+	  background-color: none;
+	 }
+</style>
+</head>
+<body>
+<h1 align="center">ABOUT ME</h1>
+<div class="header">
+	<h2 align="center">BORN   : 9-MEY-1999, CILEUNGSI, BOGOR</h2>
+	<h2 align="center">AGE    : 21</h2>
+	<h2 align="center">ADDRES : LIMUSPRATAMA REGENCY</h2>
+</div>
+<div class="clearfix">
+	<div class="column menu">
+		<ul>
+			<li><a href="what i do.html">WHAT I CAN DO?</a></li>
+			<li><a href="about me.html">ABOUT ME</a></li>
+			<li><a href="my work.html">MY WORK</a></li>
+			<li><a href="contact me.html">CONTACT ME</a></li>
+		</ul>
+	</div>
+	<div class="column content">
+	</div>
+</div>
+<div class="footer">
+	<h1 align="center">ENJOY</h1>
+</div>
+</body>
+</html>
